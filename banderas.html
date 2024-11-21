@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet"  href="banderas.css">
+       <link rel="icon"  href="icono/icono.ico" type="image/x-icon">
+       <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="author" content="Felipe Baudino">
+       <meta name="description" content="Un divertido juego quiz de banderas donde puedes poner a prueba tus conocimientos sobre las banderas de los países del mundo.">
+       <meta name="keywords" content="juego, quiz, banderas, Preguntados, países, trivia, geografía, conocimiento">
+       <title>Quiz de Banderas</title>
+</head>
+	<title>BANDERAS QUIZ</title>
+</head>
+<body>
+<header><h1>BANDERAS QUIZ</h1></header>
+
+<main>
+       <!--PANTALLA INICIAL-->
+        <section class="section-1">
+                 <canvas id="mi-canvas"></canvas>
+                 <div id="pantalla-inicial">
+                       <p>¿A que pais pertenece la bandera?</p>
+                       <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+                 </div>
+       </section>
+
+       <!--PANTALLA JUEGO-->
+       <section>
+                 <div class="pantalla-juego" id="pantalla-juego">
+	                 <img src=""  id="imgBandera">
+                     <div class="opciones">
+                             <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                             <div class="letra" id="l0">A</div>
+                             <div class="nombre" id="n0">OPCION A</div>
+                         </div>
+                         <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                             <div class="letra" id="l1">B</div>
+                             <div class="nombre" id="n1">OPCION B</div>
+                         </div>
+                         <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                             <div class="letra" id="l2">C</div>
+                             <div class="nombre" id="n2">OPCION C</div>
+                         </div>
+                     </div>
+                 </div>
+       </section>
+
+       <!--PANTALLA FINAL-->
+       <section>
+                 <div id="pantalla-final">
+	                 <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+	                 <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+	          <button class="btn" onclick="volverAlInicio()">Volver al inicio</button>
+               </div>
+       </section>
+
+</main>
+
+<footer>Autor: Felipe Baudino</footer>
+
+    <script src="banderas.js"></script>
+</body>
+</html>
